@@ -6,8 +6,6 @@ const boxes = document.querySelector("#boxes");
 btnCreate.addEventListener("click", getAmount);
 btnDestroy.addEventListener("click", destroyBoxes);
 
-// ////////
-
 function getAmount() {
   const amount = Number(input.value);
   if (amount > input.max || amount < input.min) {
@@ -16,7 +14,7 @@ function getAmount() {
     createBoxes(amount);
   }
 }
-// //////////
+
 let divElSize = 30;
 function createBoxes(amount) {
   const array = [];
@@ -34,14 +32,11 @@ function createBoxes(amount) {
   boxes.append(...array);
 }
 
-// ///////
-
 function destroyBoxes() {
   divElSize = 30;
   boxes.innerHTML = "";
+  input.value = "";
 }
-
-// /////
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;

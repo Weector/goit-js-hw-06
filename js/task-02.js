@@ -17,4 +17,3 @@ const ingredientsEl = ingredients.map((ingredient) => {
 });
 
 listEl.append(...ingredientsEl);
-console.log(listEl);

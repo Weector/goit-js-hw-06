@@ -12,8 +12,8 @@ form.addEventListener("submit", (event) => {
   }
 
   const userData = {
-    email: `${email.name}: ${email.value}`,
-    password: `${password.name}: ${password.value}`,
+    email: `${email.value}`,
+    password: `${password.value}`,
   };
   console.log(userData);
 
